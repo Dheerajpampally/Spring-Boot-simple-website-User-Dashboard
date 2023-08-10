@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download PDF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .download-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .download-card h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .download-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .download-link:hover {
+            background-color: #0056b3;
+        }
+        .logout{
+            
+            padding: 20px;
+            color: #fff;
+            border-radius: 5px;
+            margin-bottom: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="download-card">
+            <h1>Click the link below to download the PDF:</h1>
+            <a href="/download-pdf" class="download-link" download>Download PDF</a>
+        </div>
+    </div>
+    <div class="logout">
+        <a href="/profile" class="download-link" logout>Back</a> 
+
+    </div>
+</body>
+</html>
